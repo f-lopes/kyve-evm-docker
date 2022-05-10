@@ -1,0 +1,25 @@
+schemaVersion: "2.0.0"
+
+fileExistenceTests:
+  - name: kyve-evm-node binary"
+    path: "/kyve-evm/evm-linux"
+    shouldExist: true
+    permissions: "-rwxr-xr-x"
+    uid: 1000
+    gid: 1000
+
+metadataTest:
+  labels:
+    - key: maintainer
+      value: "Florian Lopes <florian.lopes@outlook.com>"
+  env:
+    - key: KYVE_EVM_VERSION
+      value: "v1.0.3"
+    - key: KYVE_EVM_HOME
+      value: "/kyve-evm"
+    - key: ARWEAVE_HOME
+      value: "/arweave"
+  user: "1000"
+  volumes: ["/arweave"]
+  workdir: "/kyve-evm"
+  entrypoint: ["./evm-linux"]
