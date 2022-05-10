@@ -18,7 +18,7 @@ The current supported Kyve EVM version is `v1.0.5`.
 ### Running a Kyve EVM protocol node
 
 ```shell
-docker run -d --name kyve-evm-node -v <host_directory_containing_arweave_keyfile>:/arweave/ ghcr.io/f-lopes/kyve-evm-node:1.0.0-kyve-1.0.5 -p <pool_id> \
+docker run -d --name kyve-evm-node -v <host_directory_containing_arweave_keyfile>:/arweave/ ghcr.io/f-lopes/kyve-evm-node:1.1.0-kyve-1.0.5 -p <pool_id> \
   --mnemonic "<your_mnemonic_phrase>" \
   --initialStake <initial_stake> --keyfile /arweave/arweave.json \
   --network korellia

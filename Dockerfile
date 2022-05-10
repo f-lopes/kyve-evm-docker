@@ -15,7 +15,7 @@ RUN mkdir ${KYVE_EVM_HOME} && \
     chmod +x ${KYVE_EVM_HOME}/kyve-evm-linux && \
     rm -rf ${KYVE_EVM_RELEASE_BINARY}
 
-FROM gcr.io/distroless/nodejs:16-debug as kyve-evm-node
+FROM gcr.io/distroless/nodejs:16 as kyve-evm-node
 
 LABEL maintainer="Florian Lopes <florian.lopes@outlook.com>"
 
