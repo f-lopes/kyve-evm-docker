@@ -1,3 +1,6 @@
+⚠️Please use https://github.com/f-lopes/kyve-docker (supports multiple Kyve runtimes)
+
+----
 # Kyve EVM node running on Docker :whale:
 
 [![CI](https://github.com/f-lopes/kyve-evm-docker/actions/workflows/main.yml/badge.svg)](https://github.com/f-lopes/kyve-evm-docker/actions/workflows/main.yml)
